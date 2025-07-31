@@ -1,117 +1,70 @@
-# Tulunad Store - E-commerce Platform
+# Getting Started with Create React App
 
-Welcome to the Tulunad Store, a full-featured e-commerce web application built with the MERN stack (MySQL, Express, React, Node.js). This platform is inspired by the vibrant culture of the Tulunad region in Karnataka, India, offering a seamless shopping experience for authentic merchandise.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## About The Project
+## Available Scripts
 
-This project was built to serve as a comprehensive, real-world example of a modern e-commerce platform. It demonstrates a complete, end-to-end user experience, from browsing products and adding them to a cart, to a secure multi-step checkout process.
+In the project directory, you can run:
 
-The application features a secure RESTful API on the backend and a dynamic, responsive user interface on the frontend. A key feature is the role-based access control, which provides a separate, secure dashboard for administrators to manage the product catalog, showcasing a practical application of authentication and authorization.
+### `npm start`
 
-## Key Features
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- **Complete E-commerce Flow**: Browse products, add items to the cart, and complete the checkout process.
-- **User Authentication**: Secure user registration and login system using JSON Web Tokens (JWT).
-- **Product Management**: A dynamic product catalog with search and filtering capabilities.
-- **Shopping Cart**: Fully functional cart with the ability to add, update, and remove items.
-- **Order Management**: Users can place orders and view their order history in their personal account dashboard.
-- **Admin Dashboard**: A secure, role-protected dashboard for administrators to perform CRUD (Create, Read, Update, Delete) operations on products.
-- **Image Hosting**: Product images are hosted and managed via the Cloudinary cloud platform.
-- **Responsive Design**: The user interface is designed to be fully responsive and works beautifully on all devices.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Tech Stack
+### `npm test`
 
-**Backend:**
-- **Node.js**: JavaScript runtime environment.
-- **Express.js**: Web application framework for Node.js.
-- **MySQL2**: Database driver for connecting to the MySQL database.
-- **JWT (jsonwebtoken)**: For secure user authentication.
-- **Bcrypt.js**: For hashing user passwords.
-- **Cloudinary**: For cloud-based image storage and management.
-- **Multer**: Middleware for handling file uploads.
-- **Dotenv**: For managing environment variables.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-**Frontend:**
-- **React.js**: A JavaScript library for building user interfaces.
-- **React Router**: For client-side routing and navigation.
-- **Styled Components**: For component-level styling.
-- **Framer Motion**: For animations and page transitions.
-- **Axios**: For making API requests to the backend.
-- **React Hot Toast**: For user-friendly notifications.
+### `npm run build`
 
-## Project Structure
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The project is organized into two main directories:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- `/backend`: Contains the Node.js/Express server, API routes, controllers, and database logic.
-- `/frontend`: Contains the React application, components, pages, and all client-side logic.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Setup and Installation
+### `npm run eject`
 
-To get this project up and running on your local machine, please follow these steps.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Prerequisites
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- **Node.js** (v16 or later)
-- **MySQL** (or a compatible database like MariaDB)
-- **Git**
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### 1. Backend Setup
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-1.  **Navigate to the backend directory:**
-    ```bash
-    cd backend
-    ```
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
-3.  **Set up the database:**
-    - Connect to your MySQL server.
-    - Create a new database. The `schema.sql` file uses `tulunad_store_db` by default.
-    - Run the `schema.sql` script provided in the `backend` directory to create all the necessary tables and pre-populate product data.
-4.  **Create a `.env` file** in the `backend` directory and populate it with your credentials, following the example below.
-5.  **Start the backend server:**
-    ```bash
-    npm start
-    ```
-    The server should now be running on `http://localhost:5000`.
+## Learn More
 
-### 2. Frontend Setup
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-1.  **Navigate to the frontend directory:**
-    ```bash
-    cd frontend
-    ```
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
-3.  **Start the frontend development server:**
-    ```bash
-    npm start
-    ```
-    The React application should now be running and will open automatically in your browser at `http://localhost:3000`.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Environment Variables (`.env`)
+### Code Splitting
 
-Your backend requires a `.env` file for configuration. Create this file in the `/backend` directory:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-```env
-# Server Configuration
-PORT=5000
+### Analyzing the Bundle Size
 
-# Database Configuration (MySQL)
-DB_HOST=localhost
-DB_USER=your_mysql_user
-DB_PASSWORD=your_mysql_password
-DB_NAME=tulunad_store_db
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-# JSON Web Token (JWT) Configuration
-JWT_SECRET=your_super_long_and_secret_jwt_string
-JWT_EXPIRES_IN=7d
+### Making a Progressive Web App
 
-# Cloudinary Configuration
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
